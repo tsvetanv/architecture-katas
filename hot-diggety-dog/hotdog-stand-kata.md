@@ -28,11 +28,11 @@ Local hot dog stand merchant wants a point-of-sale system for his hot dog stand 
 ## I. Design Scope
 
 ### Features (Functional Requirements)
-- **Post Sale:** Order content, discount, tax, total price, timestamp, location
+- **Post Sale:**
 - **Get Discount**
 - **Post Inventory**
 - **Get Inventory**
-- **Notify Nearby Stand:** Post location
+- **Notify Nearby Stand:**
 - **Get Accounting Info**
 
 ### Architecture Characteristics (Non-functional Requirements)
@@ -55,8 +55,6 @@ Local hot dog stand merchant wants a point-of-sale system for his hot dog stand 
 |Send inventory updates|`GET /inventory/{standId}`<br>`POST /inventory/{standId}`|Get and add an inventory for target stand|
 |Post Stand Location|`POST /location/{standId}`|Add location of stand|
 |Get Accounting Info|`GET /accounting/info/{standId}`|Export accounting info|
-
-
 
 ### 2. High-level Design Diagram
 
