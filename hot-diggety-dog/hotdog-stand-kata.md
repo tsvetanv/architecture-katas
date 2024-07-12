@@ -66,7 +66,8 @@ Topics for later discussion:
 ### 3. Data Model and Schema
 - **Data Access Patterns**
 - **Read/Write Ratio**
-- **QPS (Query per Second):** Affects the performance
+- **QPS (Query per Second):** Sales QPS: 50, Inventory QPS: 50 per hour
+
 - **Data Model**
   
 **Sale** entity
