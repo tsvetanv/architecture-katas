@@ -1,6 +1,7 @@
 
 # Kata: Hot Diggety Dog!
-Reference: [Hot Diggety Dog](https://nealford.com/katas/kata?id=HotDiggetyDog)
+Reference: [nealford.com](https://nealford.com/katas/kata?id=HotDiggetyDog) 
+
 Local hot dog stand merchant wants a point-of-sale system for his hot dog stand operators.
 
 ## Users
