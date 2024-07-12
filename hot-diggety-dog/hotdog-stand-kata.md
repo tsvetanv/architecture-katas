@@ -56,13 +56,52 @@ Local hot dog stand merchant wants a point-of-sale system for his hot dog stand 
 |Post Stand Location|`POST /location/{standId}`|Add location of stand|
 |Get Accounting Info|`GET /accounting/info/{standId}`|Export accounting info|
 
+
+
 ### 2. High-level Design Diagram
-- Write items list for later discussion. Don't dive into details.
+
+Topics for later discussion: 
+- **Choice of database**
 
 ### 3. Data Model and Schema
 - **Data Access Patterns**
 - **Read/Write Ratio**
 - **QPS (Query per Second):** Affects the performance
+- **Data Model**
+  
+**Sale** entity
+| Field | Type | Description |
+|----------|-----------------------------|----------|
+| sale_id | String | Primary key, unique identifier for each sale. |
+| hot_dog_stand_id | String | Foreign key referencing Hot Dog Stand table, indicates which stand made the sale. |
+| sale_date | Datetime  | Date and time when the sale occurred. |
+| hot_dog_count | int  | Number of hot dogs sold in the sale. |
+| discount_id | String  | Foreign key referencing Discount table, optional if there is a discount applied to the sale. |
+| total_amount | Double  | Total amount of the sale after applying any discounts. |
+
+**Hot Dog Stand** entity
+| Field | Type | Description |
+|----------|-----------------------------|----------|
+| stand_id | String | Primary key, unique identifier for each hot dog stand. |
+| stand_name | String | Name or identifier of the hot dog stand. |
+| latitude | Double | Latitude of hot dog stand's location. |
+| longitude | Double | Longitude of hot dog stand's location. |
+
+**Discount** entity
+| Field | Type | Description |
+|----------|-----------------------------|----------|
+| discount_id | String | Primary key, unique identifier for each discount. |
+| discount_name | String | Name or description of the discount. |
+| discount_percentage | Integer | Percentage of discount applied (e.g., 10% off). |
+| start_date | Datetime | Date when the discount becomes valid. |
+| end_date | Datetime | Date when the discount expires. |
+
+**Hot Dog Item** entity
+| Field | Type | Description |
+|----------|-----------------------------|----------|
+| item_id | String | Primary key, unique identifier for each hot dog item. |
+| item_name | String | Name of the hot dog item. |
+| quantity | Integer | Quantity of the available item. |
 
 ### 4. Rough Estimations
 - **Queries**
