@@ -60,6 +60,8 @@ Local hot dog stand merchant wants a point-of-sale system for his hot dog stand 
 ### 2. High-level Design Diagram
 
 Topics for later discussion: 
+- **What are the hardware parameters of POS device? What is the OS(perhaps some lightweight Linux distribution)?**
+- **When the wifi connection on POS device is lost how we will store the data? Do we need**
 - **Choice of database**
 
 ### 3. Data Model and Schema
