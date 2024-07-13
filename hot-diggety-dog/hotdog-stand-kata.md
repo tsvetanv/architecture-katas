@@ -65,7 +65,7 @@ Topics for later discussion:
 ### 3. Data Model and Schema
 - **Data Access Patterns**
 - **Read/Write Ratio**
-- **QPS (Query per Second):** Sales QPS: 50, Inventory QPS: 50 per hour
+- **QPS (Query per Second):** Sales Queries: 50 QPS, Inventory Queries: 50 queries per hour
 
 - **Data Model**
   
@@ -78,6 +78,7 @@ Topics for later discussion:
 | hot_dog_count | int  | Number of hot dogs sold in the sale. |
 | discount_id | String  | Foreign key referencing Discount table, optional if there is a discount applied to the sale. |
 | total_amount | Double  | Total amount of the sale after applying any discounts. |
+| payment_type_id | String  | Foreign key referencing PaymentType table, the allowed options are cash and payment card(debit/credit)  |
 
 **Hot Dog Stand** entity
 | Field | Type | Description |
