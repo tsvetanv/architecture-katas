@@ -59,6 +59,12 @@ Local hot dog stand merchant wants a point-of-sale system for his hot dog stand 
 
 ### 2. High-level Design Diagram
 
+<p align="center">
+  <br/>
+  <img src="/hot-diggety-dog/resources/Kata-HotDog-Architecture-Overview-Diagram.png" />
+  <br/>
+</p>
+
 Topics for later discussion: 
 - **What are the hardware parameters of POS device?**
 - **What is the OS of POS device? Perhaps it is Android OS or another Linux-based mobile operating system**
