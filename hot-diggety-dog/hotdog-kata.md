@@ -1,4 +1,6 @@
 
+<img src="/hot-diggety-dog/resources/HotDog-Kata-Logo - Thumbnail.jpg" />
+
 # Kata: Hot Diggety Dog!
 Reference: [nealford.com](https://nealford.com/katas/kata?id=HotDiggetyDog) 
 
