@@ -31,11 +31,11 @@ Local hot dog stand merchant wants a point-of-sale system for his hot dog stand 
 ## I. Design Scope
 
 ### Features (Functional Requirements)
-- **Post Sale:**
+- **Post Sale**
 - **Get Discount**
 - **Post Inventory**
 - **Get Inventory**
-- **Notify Nearby Stand:**
+- **Notify Nearby Stand**
 - **Get Accounting Info**
 
 ### Architecture Characteristics (Non-functional Requirements)
