@@ -120,9 +120,27 @@ Topics for later discussion:
 - **Database:** Entity size, whole DB - scaling
 
 ## III. Design Deep Dive
-- Review the design & go into details (refer to the list for later discussion)
-- Analyze the quality (non-functional) requirements
-- Think about problems / bottlenecks. Follow the described approach
-- Think about different options/solutions and evaluate their tradeoffs
-- Choose a concrete solution for some components (e.g., DB, Load Balancer)
+
+**Component Diagram**
+
+
+
+**POS Mobile App:**
+    - UI Components: Handles user interactions.
+    - API Client: Manages API requests to the backend.
+    - Local Storage: Caches data locally.
+    - Authentication Handler: Manages user login and token storage.
+    - Push Notification Receiver: Handles incoming notifications.
+
+**Management Web App:**
+    - UI: Handles user interactions.
+
+**Backend System:**
+    - API Gateway: Handles and dispatch incoming API requests.
+    - Backend Application: implements the core functionality.
+    - Authentication Service: Manages authentication and authorization.
+    - Push Notification Service: Manages sending push notifications.
+
+**External Payment System:**
+    - Third party system that handles payment (like Strype).
 
