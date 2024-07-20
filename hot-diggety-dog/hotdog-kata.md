@@ -124,23 +124,28 @@ Topics for later discussion:
 **Component Diagram**
 
 
+<p align="center">
+  <br/>
+  <img src="/hot-diggety-dog/resources/Kata-HotDiggetyDog-Component-Diagram.png" />
+  <br/>
+</p>
 
 **POS Mobile App:**
-    - UI Components: Handles user interactions.
-    - API Client: Manages API requests to the backend.
-    - Local Storage: Caches data locally.
-    - Authentication Handler: Manages user login and token storage.
-    - Push Notification Receiver: Handles incoming notifications.
+- UI Components: Handles user interactions.
+- API Client: Manages API requests to the backend.
+- Local Storage: Caches data locally.
+- Authentication Handler: Manages user login and token storage.
+- Push Notification Receiver: Handles incoming notifications.
 
 **Management Web App:**
-    - UI: Handles user interactions.
+- UI: Handles user interactions.
 
 **Backend System:**
-    - API Gateway: Handles and dispatch incoming API requests.
-    - Backend Application: implements the core functionality.
-    - Authentication Service: Manages authentication and authorization.
-    - Push Notification Service: Manages sending push notifications.
+- API Gateway: Handles and dispatch incoming API requests.
+- Backend Application: implements the core functionality.
+- Authentication Service: Manages authentication and authorization.
+- Push Notification Service: Manages sending push notifications.
 
 **External Payment System:**
-    - Third party system that handles payment (like Strype).
+- External third party system that handles payment logic (like Strype).
 
