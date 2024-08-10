@@ -43,4 +43,24 @@ conference, staff member, attendee, speaker, talk, room, tolak vote, notificatio
 | Manage conference | `PUT POST /cms/v1/conference` | Create, modify, rebrand conference |
 |Get talk slides|`GET /cms/v1/conference/{confId}/speaker/{speakerId}/talk/{talkId}/slides`|Attendees gets speaker slides|
 |Evaluation system|`POST /cms/v1/conference/{confId}/attendee/{attendeeId}/evaluation/questionare`|Attendee evaluates a conference|
-## Subsection 2
+
+## Architecture Characteristics (Quality Requirements)
+- Elasticity
+- Scalability
+- Configurability
+
+## Rough Estimations
+5 conferences X 3 speakers = 15 QPS <br/>
+5 conferences X 10 staff members = 50 QPS <br/>
+5 conferences X 1000 attendees = 5000 QPS <br/>
+Total: ~ 6000 QPS <br/>
+ <br/>
+ Dynamic data (schedule conference): 6000 QPS
+ Static data (speakers' talk slides): 5000 QPS
+
+ Predefined data schema => relational DB
+ Infrastructure: public cloud provider (Azure, AWS) because of architecture characteristics elasticity and scalability. We will cover 2 region: US East and US West.
+ 
+ ## TODO 1
+
+ ## TODO 2
