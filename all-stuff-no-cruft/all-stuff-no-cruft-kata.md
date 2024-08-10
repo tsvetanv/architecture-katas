@@ -30,6 +30,17 @@ Conference organizer needs a management system for the conferences he runs for b
 
 # Implementation
 
-## Subsection 1
+## Domain
+conference, staff member, attendee, speaker, talk, room, tolak vote, notification (talk, event, staff member), conference evaluation, talk slide, schedule
 
+## API Design
+| Functional Requirement | API | Description |
+|----------|-----------------------------|----------|
+| Get schedule  | `GET /cms/v1/conference/{confId}/schedule` | Get a schedule for concrete conference |
+| Manage talks | `PUT POST /cms/v1/conference/{confId}/speaker/{speakerId}/talk` | Speaker manages talks |
+|Vote talks|`POST /cms/v1/conference/{confId}/speaker/{speakerId}/talk/{talkId}/vote`|Attendees vote up/dpwn talks|
+|Notification|`POST /cms/v1/conference/{confId}/organizer/notification/attendees`| Organizer notifies attendees about conference schedule changes |
+| Manage conference | `PUT POST /cms/v1/conference` | Create, modify, rebrand conference |
+|Get talk slides|`GET /cms/v1/conference/{confId}/speaker/{speakerId}/talk/{talkId}/slides`|Attendees gets speaker slides|
+|Evaluation system|`POST /cms/v1/conference/{confId}/attendee/{attendeeId}/evaluation/questionare`|Attendee evaluates a conference|
 ## Subsection 2
