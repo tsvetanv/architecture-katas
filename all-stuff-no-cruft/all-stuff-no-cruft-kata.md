@@ -61,6 +61,11 @@ Total: ~ 6000 QPS <br/>
  Predefined data schema => relational DB
  Infrastructure: public cloud provider (Azure, AWS) because of architecture characteristics elasticity and scalability. We will cover 2 region: US East and US West.
  
- ## TODO 1
+ ## Architecture Overview Diagram
 
- ## TODO 2
+ ## Component Diagram
+- Start first implementation with modular monolith architecture 
+- Later evaluate the option for microservice architetcure when we are more familiar with relationships between domain entities
+- Database: 1 write cluster and 1 read replica
+- Slides are stored in static storage like Amazon S3
+- Introduce sign up, sign in and roles (4 roles: attendee, speaker, staff member, organizer/admin)
