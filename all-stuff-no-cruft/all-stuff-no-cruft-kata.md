@@ -63,6 +63,12 @@ Total: ~ 6000 QPS <br/>
  
  ## Architecture Overview Diagram
 
+<p align="center">
+  <br/>
+  <img src="/all-stuff-no-cruft/resources/Kata-AllStuffNoCruft-Architecture-Overview-Diagram.png" />
+  <br/>
+</p>
+
  ## Component Diagram
 - Start first implementation with modular monolith architecture 
 - Later evaluate the option for microservice architetcure when we are more familiar with relationships between domain entities
