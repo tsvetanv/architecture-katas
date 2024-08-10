@@ -70,6 +70,13 @@ Total: ~ 6000 QPS <br/>
 </p>
 
  ## Component Diagram
+
+<p align="center">
+  <br/>
+  <img src="/all-stuff-no-cruft/resources/Kata-AllStuffNoCruft-Component-Diagram.png" />
+  <br/>
+</p>
+ 
 - Start first implementation with modular monolith architecture 
 - Later evaluate the option for microservice architetcure when we are more familiar with relationships between domain entities
 - Database: 1 write cluster and 1 read replica
